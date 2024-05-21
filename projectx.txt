@@ -1,6 +1,6 @@
-$xx = User::where('user_username', 'admin-117')->count();
+$xx = \App\Models\User::where('user_username', 'admin-117')->count();
 if ($xx <= 0) {
-    User::create([
+    \App\Models\User::create([
         'user_level' => '1',
         'user_username' => 'admin-117',
         'user_nama' => 'admin-117',
